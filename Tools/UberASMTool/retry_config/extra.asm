@@ -32,7 +32,14 @@ reset:
 ;=====================================
 death:
     ; Feel free to put your code here.
-    lda #$01 : sta $0F5E|!addr  ; matches clear_score_sprites.asm
+
+    ; Clear score sprites on death to free up tiles for prompt display
+    stz $16E1|!addr
+    stz $16E2|!addr
+    stz $16E3|!addr
+    stz $16E4|!addr
+    stz $16E5|!addr
+    stz $16E6|!addr
     rts
 
 ;=====================================

@@ -1,5 +1,7 @@
 v4.18
 - fixed music and scrolling issue in intro level
+- reorganized asar patches
+- simplify clear score sprites uberasm
 
 v4.17.1
 - hotfix for initialization script not working
